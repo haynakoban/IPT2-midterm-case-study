@@ -6,6 +6,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #f2f2f2;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #f2f2f2;
+}
+
+li a {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 100;
+  position: relative;
+  z-index: 0;
+}
+
+li a.links:hover::before {
+}
+
+li a.links::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  z-index: 1;
 }
 
 .bg-image {
