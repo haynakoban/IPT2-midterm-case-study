@@ -51,7 +51,7 @@ li a.links::before {
 
 .bg-image {
   background-image: url('../assets/bg-image.png');
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
   background-position: center;
 }
@@ -92,5 +92,6 @@ li a.links::before {
   font-weight: 200;
 }
 
-.personal-info {
+.key {
+  text-align: right;
 }
