@@ -14,25 +14,39 @@ a {
   color: #f2f2f2;
 }
 
+a.logo {
+  letter-spacing: 3px;
+  margin: 0 2px;
+  font-weight: 200;
+}
+
 li a {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 100;
   position: relative;
-  z-index: 0;
+  z-index: 10;
+  margin: 0 2px;
 }
 
 li a.links:hover::before {
+  transform: scaleX(1);
+  background-color: #f2f2f240;
 }
 
 li a.links::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f2f2f2;
-  z-index: 1;
+  background-color: none;
+  z-index: -1;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease-in-out;
 }
 
 .bg-image {
